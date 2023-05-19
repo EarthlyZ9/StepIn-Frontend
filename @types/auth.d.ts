@@ -1,3 +1,0 @@
-interface Token {
-    accessToken: string;
-}
