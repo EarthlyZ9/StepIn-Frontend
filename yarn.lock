@@ -355,6 +355,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-portal@npm:^4":
+  version: 4.0.4
+  resolution: "@types/react-portal@npm:4.0.4"
+  dependencies:
+    "@types/react": "*"
+  checksum: 29e025bdcd2cbf7acaac34b6e9083967b6d2d817f754f94fd70ed6c3942a5f3fe175be8123ca8f4eeadfc5b9d41c560c12b6cdd98c974c38dba05c165e38aedd
+  languageName: node
+  linkType: hard
+
 "@types/react@npm:*, @types/react@npm:18.2.6":
   version: 18.2.6
   resolution: "@types/react@npm:18.2.6"
@@ -3515,7 +3524,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.8.1":
+"prop-types@npm:^15.5.8, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -3563,6 +3572,18 @@ __metadata:
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
+  languageName: node
+  linkType: hard
+
+"react-portal@npm:^4.2.2":
+  version: 4.2.2
+  resolution: "react-portal@npm:4.2.2"
+  dependencies:
+    prop-types: ^15.5.8
+  peerDependencies:
+    react: ^16.0.0-0 || ^17.0.0-0 || ^18.0.0-0
+    react-dom: ^16.0.0-0 || ^17.0.0-0 || ^18.0.0-0
+  checksum: dc7cd0c6907d1859c0eca4571108934ac791eb9eaf020529a26d4732b7bb556a53bf7e87e868f9918bd60c58f512cc36a49aef5671c964d0a49494168fb2abe0
   languageName: node
   linkType: hard
 
@@ -3885,6 +3906,7 @@ __metadata:
     "@types/node": 20.1.7
     "@types/react": 18.2.6
     "@types/react-dom": 18.2.4
+    "@types/react-portal": ^4
     "@typescript-eslint/eslint-plugin": ^5.59.6
     "@typescript-eslint/parser": ^5.59.6
     autoprefixer: ^10.4.14
@@ -3899,6 +3921,7 @@ __metadata:
     prettier: ^2.8.8
     react: 18.2.0
     react-dom: 18.2.0
+    react-portal: ^4.2.2
     tailwind-scrollbar: ^3.0.4
     tailwindcss: ^3.3.2
     typescript: ^5.0.4
