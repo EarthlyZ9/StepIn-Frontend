@@ -1,10 +1,10 @@
 import instance from '@apis/_axios/instance';
+import { OAuthLoginParam } from '@apis/auth/authApi.type';
 
 export class AuthApi {
-	createOAuthUser = async (req) => {
-		const request = { code: req.code, registrationId: req.registrationId };
+	createOAuthUser = async (body: OAuthLoginParam): Promise<LoginResponse> => {
 		try {
-			return await instance.post('/auth/oauth2/callback', request);
+			return await instance.post('/auth/oauth2/callback', body);
 		} catch (error) {
 			console.log(error);
 		}
@@ -27,7 +27,7 @@ export class AuthApi {
 		}
 	};
 
-	createGuestUser = async () => {
+	createGuestUser = async (): Promise<LoginResponse> => {
 		try {
 			return await instance.post('/auth/guest/login');
 		} catch (error) {
