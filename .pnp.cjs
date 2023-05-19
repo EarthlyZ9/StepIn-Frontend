@@ -32,6 +32,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:20.1.7"],\
             ["@types/react", "npm:18.2.6"],\
             ["@types/react-dom", "npm:18.2.4"],\
+            ["@types/react-portal", "npm:4.0.4"],\
             ["@typescript-eslint/eslint-plugin", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:5.59.6"],\
             ["@typescript-eslint/parser", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:5.59.6"],\
             ["autoprefixer", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:10.4.14"],\
@@ -46,6 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.8.8"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:18.2.0"],\
+            ["react-portal", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:4.2.2"],\
             ["tailwind-scrollbar", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:3.0.4"],\
             ["tailwindcss", "npm:3.3.2"],\
             ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
@@ -499,6 +501,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-react-dom-npm-18.2.4-5d62ac2096-8301f35cf1.zip/node_modules/@types/react-dom/",\
           "packageDependencies": [\
             ["@types/react-dom", "npm:18.2.4"],\
+            ["@types/react", "npm:18.2.6"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/react-portal", [\
+        ["npm:4.0.4", {\
+          "packageLocation": "./.yarn/cache/@types-react-portal-npm-4.0.4-7e27a1ab22-29e025bdcd.zip/node_modules/@types/react-portal/",\
+          "packageDependencies": [\
+            ["@types/react-portal", "npm:4.0.4"],\
             ["@types/react", "npm:18.2.6"]\
           ],\
           "linkType": "HARD"\
@@ -4431,6 +4443,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["react-portal", [\
+        ["npm:4.2.2", {\
+          "packageLocation": "./.yarn/cache/react-portal-npm-4.2.2-bd632ca24a-dc7cd0c690.zip/node_modules/react-portal/",\
+          "packageDependencies": [\
+            ["react-portal", "npm:4.2.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:4.2.2", {\
+          "packageLocation": "./.yarn/__virtual__/react-portal-virtual-66b17c0178/0/cache/react-portal-npm-4.2.2-bd632ca24a-dc7cd0c690.zip/node_modules/react-portal/",\
+          "packageDependencies": [\
+            ["react-portal", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:4.2.2"],\
+            ["@types/react", "npm:18.2.6"],\
+            ["@types/react-dom", "npm:18.2.4"],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["read-cache", [\
         ["npm:1.0.0", {\
           "packageLocation": "./.yarn/cache/read-cache-npm-1.0.0-00fa89ed05-cffc728b9e.zip/node_modules/read-cache/",\
@@ -4745,6 +4784,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:20.1.7"],\
             ["@types/react", "npm:18.2.6"],\
             ["@types/react-dom", "npm:18.2.4"],\
+            ["@types/react-portal", "npm:4.0.4"],\
             ["@typescript-eslint/eslint-plugin", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:5.59.6"],\
             ["@typescript-eslint/parser", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:5.59.6"],\
             ["autoprefixer", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:10.4.14"],\
@@ -4759,6 +4799,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.8.8"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:18.2.0"],\
+            ["react-portal", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:4.2.2"],\
             ["tailwind-scrollbar", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:3.0.4"],\
             ["tailwindcss", "npm:3.3.2"],\
             ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
