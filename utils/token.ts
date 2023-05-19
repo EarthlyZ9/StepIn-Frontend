@@ -1,13 +1,13 @@
-import { getCookie, removeCookie, setCookie, } from 'cookie';
+import { getCookie, removeCookie, setCookie } from './cookie';
 
 export const getToken = () => {
-    return getCookie('stepIn');
+	return getCookie('stepIn');
 };
 
 export const setToken = (token: string) => {
-    setCookie('stepIn', token);
+	setCookie('stepIn', token);
 };
 
 export const deleteToken = () => {
-    removeCookie('stepIn');
+	removeCookie('stepIn');
 };
