@@ -3,7 +3,9 @@ import { generateRandomString } from '@utils/random';
 
 export const setOAuth2State = () => {
 	const state = generateRandomString(32);
-	localStorage.setItem('state', state);
+	if (typeof window !== 'undefined') {
+		localStorage.setItem('state', state);
+	}
 	return state;
 };
 
