@@ -2,8 +2,9 @@ import instance from '@apis/_axios/instance';
 
 export class AuthApi {
 	createOAuthUser = async (req) => {
+		const request = { code: req.code, registrationId: req.registrationId };
 		try {
-			return await instance.post('/auth/oauth2/callback', req);
+			return await instance.post('/auth/oauth2/callback', request);
 		} catch (error) {
 			console.log(error);
 		}
@@ -12,6 +13,7 @@ export class AuthApi {
 	logoutOauthUser = async () => {
 		try {
 			await instance.post('/auth/logout');
+			localStorage.removeItem('state');
 		} catch (error) {
 			console.log(error);
 		}
