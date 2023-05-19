@@ -9,5 +9,5 @@ interface SimpleStep extends StepBase {
 
 interface Step extends StepBase {
 	project: SimpleProject;
-	items: Item[];
+	items: [] | Item[];
 }

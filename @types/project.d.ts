@@ -5,7 +5,8 @@ interface ProjectBase extends BaseResponseAttributes {
 interface SimpleProject extends ProjectBase, SimpleOwnerAttribute {}
 
 interface Project extends ProjectBase, OwnerAttribute {
-	steps: Step[];
+	owner: User;
+	steps: [] | Step[];
 }
 
 interface ProjectCollection {
