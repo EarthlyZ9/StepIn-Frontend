@@ -15,7 +15,6 @@ export const getGoogleAuthUri = (state: string) => {
 		&scope=${process.env.NEXT_PUBLIC_GOOGLE_SCOPE}
 		&state=${state}
 		&redirect_uri=${process.env.NEXT_PUBLIC_GOOGLE_REDIRECT_URI}
-
 		`;
 };
 
@@ -38,7 +37,6 @@ export const getNaverAuthUri = (state: string) => {
 		&scope=${process.env.NEXT_PUBLIC_NAVER_SCOPE}
 		&state=${state}
 		&redirect_uri=${process.env.NEXT_PUBLIC_NAVER_REDIRECT_URI}
-
 		`;
 };
 
