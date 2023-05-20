@@ -52,8 +52,7 @@ export default function StepContainer() {
 	return (
 		<div className={'p-1'}>
 			<p>This is Container</p>
-			<div>{user?.id}</div>
-			{!user ? (
+			{!user && (
 				<Portal>
 					<ModalWrapper
 						Modal={LoginModal}

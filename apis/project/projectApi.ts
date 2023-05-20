@@ -37,7 +37,8 @@ export class ProjectApi {
 
 	async createEmptyProject(): Promise<Project> {
 		try {
-			return await instance.post('/projects');
+			const res = await instance.post('/projects');
+			return res.data;
 		} catch (error) {
 			console.log(error);
 		}
