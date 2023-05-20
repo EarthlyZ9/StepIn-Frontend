@@ -17,8 +17,8 @@ export default function ModalWrapper({
 		isModal && (
 			<div
 				className={`w-[30rem] ${
-					height && `h-[${height}]`
-				} p-4 justify-items-center flex flex-col my-auto`}
+					height !== undefined ? `h-[${height}]` : ``
+				}p-4 justify-items-center flex flex-col my-auto`}
 			>
 				{hasCloseButton && (
 					<button type={'button'} onClick={onCloseModal}>

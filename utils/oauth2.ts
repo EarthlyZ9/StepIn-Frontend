@@ -44,5 +44,5 @@ export const getNaverAuthUri = (state: string) => {
 };
 
 export const unsetOAuth2State = () => {
-	localStorage.setItem('state', '');
+	localStorage.removeItem('state');
 };

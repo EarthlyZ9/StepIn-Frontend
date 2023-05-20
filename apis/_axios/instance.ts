@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { deleteToken, getToken, setToken } from '@utils/token';
+import { getToken, setToken } from '@utils/token';
 
 const instance = axios.create({
 	baseURL: process.env.NEXT_PUBLIC_API_BASE_URL,
@@ -42,7 +42,6 @@ instance.interceptors.response.use(
 		const { config: reqData } = error || {};
 		if (error.response.status === 401) {
 			if (error.response.data.message.includes('Invalid credentials')) {
-				deleteToken();
 				const tokenRes = await refreshToken();
 				if (tokenRes.data) {
 					const access = tokenRes.data.accessToken;
@@ -54,7 +53,6 @@ instance.interceptors.response.use(
 			} else if (
 				error.response.data.message.includes('Authentication needed')
 			) {
-				deleteToken();
 				//TODO. 전역 관리 중인 유저 정보 비우고 로그인 페이지로 리다이렉트
 				unsetAuthorHeader();
 				window.alert('토큰이 만료되어 자동으로 로그아웃 되었습니다.');
