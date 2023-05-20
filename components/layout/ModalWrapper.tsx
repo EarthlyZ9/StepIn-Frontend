@@ -3,7 +3,7 @@ type ModalProps = {
 	isModal: boolean;
 	onCloseModal: (any) => void;
 	hasCloseButton?: boolean;
-	height: string;
+	height?: string;
 };
 
 export default function ModalWrapper({
