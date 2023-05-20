@@ -23,7 +23,12 @@ export default function SocialLoginButton({
 	else if (provider === 'naver') redirectUrl = getNaverAuthUri(state);
 
 	return (
-		<div className={'w-40 my-2 h-10 mx-auto overflow-hidden rounded-sm'}>
+		<div
+			className={`w-40 ${
+				provider === 'google' &&
+				`border-2 border-solid border-social-google bg-social-google`
+			} my-2 h-10 mx-auto overflow-hidden rounded-sm`}
+		>
 			<a href={redirectUrl}>
 				<Image
 					src={imageSrc}
