@@ -37,6 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:5.59.6"],\
             ["autoprefixer", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:10.4.14"],\
             ["axios", "npm:1.4.0"],\
+            ["debug", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:4.3.4"],\
             ["eslint", "npm:8.40.0"],\
             ["eslint-config-next", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:13.4.2"],\
             ["eslint-config-prettier", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:8.8.0"],\
@@ -51,6 +52,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-portal", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:4.2.2"],\
             ["react-redux", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:8.0.5"],\
             ["redux", "npm:4.2.1"],\
+            ["supports-color", "npm:9.3.1"],\
             ["tailwind-scrollbar", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:3.0.4"],\
             ["tailwindcss", "npm:3.3.2"],\
             ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
@@ -1459,6 +1461,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/supports-color", null],\
             ["ms", "npm:2.1.3"],\
             ["supports-color", null]\
+          ],\
+          "packagePeers": [\
+            "@types/supports-color",\
+            "supports-color"\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:4.3.4", {\
+          "packageLocation": "./.yarn/__virtual__/debug-virtual-7e7f3bd45b/0/cache/debug-npm-4.3.4-4513954577-3dbad3f94e.zip/node_modules/debug/",\
+          "packageDependencies": [\
+            ["debug", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:4.3.4"],\
+            ["@types/supports-color", null],\
+            ["ms", "npm:2.1.2"],\
+            ["supports-color", "npm:9.3.1"]\
           ],\
           "packagePeers": [\
             "@types/supports-color",\
@@ -4909,6 +4925,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:5.59.6"],\
             ["autoprefixer", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:10.4.14"],\
             ["axios", "npm:1.4.0"],\
+            ["debug", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:4.3.4"],\
             ["eslint", "npm:8.40.0"],\
             ["eslint-config-next", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:13.4.2"],\
             ["eslint-config-prettier", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:8.8.0"],\
@@ -4923,6 +4940,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-portal", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:4.2.2"],\
             ["react-redux", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:8.0.5"],\
             ["redux", "npm:4.2.1"],\
+            ["supports-color", "npm:9.3.1"],\
             ["tailwind-scrollbar", "virtual:6f9bafcf75261bce08c5a67116e68027219f9f8b3b03e21b3b8081bc0817701e3cbe093ade2783b250dddf10a0144f1b486c547fe5112b0923653a8c93c00446#npm:3.0.4"],\
             ["tailwindcss", "npm:3.3.2"],\
             ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
@@ -5121,6 +5139,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["supports-color", "npm:7.2.0"],\
             ["has-flag", "npm:4.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:9.3.1", {\
+          "packageLocation": "./.yarn/cache/supports-color-npm-9.3.1-08866b3304-00c4d1082a.zip/node_modules/supports-color/",\
+          "packageDependencies": [\
+            ["supports-color", "npm:9.3.1"]\
           ],\
           "linkType": "HARD"\
         }]\
