@@ -1,10 +1,12 @@
 import instance from '@apis/_axios/instance';
 import { OAuthLoginParam } from '@apis/auth/authApi.type';
+import { getToken } from '@utils/token';
 
 export class AuthApi {
 	createOAuthUser = async (body: OAuthLoginParam): Promise<LoginResponse> => {
 		try {
-			return await instance.post('/auth/oauth2/callback', body);
+			const res = await instance.post('/auth/oauth2/callback', body);
+			return res.data;
 		} catch (error) {
 			console.log(error);
 		}
@@ -30,6 +32,18 @@ export class AuthApi {
 	createGuestUser = async (): Promise<LoginResponse> => {
 		try {
 			return await instance.post('/auth/guest/login');
+		} catch (error) {
+			console.log(error);
+		}
+	};
+
+	getUser = async (): Promise<User | null> => {
+		try {
+			if (getToken()) {
+				return await instance.get('/auth/me');
+			} else {
+				return null;
+			}
 		} catch (error) {
 			console.log(error);
 		}
