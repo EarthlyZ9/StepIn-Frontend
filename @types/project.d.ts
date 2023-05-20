@@ -10,5 +10,5 @@ interface Project extends ProjectBase, OwnerAttribute {
 }
 
 interface ProjectCollection {
-	projects: SimpleProject;
+	projects: SimpleProject[];
 }

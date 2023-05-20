@@ -2,17 +2,16 @@ import { ProjectUpdateParam } from './projectApi.type';
 import instance from '@apis/_axios/instance';
 
 export class ProjectApi {
-	async getProjects(): Promise<SimpleProject[]> {
+	async getProjects(): Promise<CollectionResponse<ProjectCollection>> {
 		try {
-			return await instance.get('/projects');
+			const res = await instance.get('/projects');
+			return res.data;
 		} catch (error) {
 			console.log(error);
 		}
 	}
 
-	async getProjectById(
-		id: number,
-	): Promise<CollectionResponse<ProjectCollection>> {
+	async getProjectById(id: number): Promise<Project> {
 		try {
 			return await instance.get(`/projects/${id}`);
 		} catch (error) {
