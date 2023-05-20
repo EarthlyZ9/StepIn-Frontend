@@ -1,13 +1,13 @@
 import { getCookie, removeCookie, setCookie } from './cookie';
 
 export const getToken = () => {
-	return getCookie('stepIn');
+	return getCookie('step-in-access-token');
 };
 
 export const setToken = (token: string) => {
-	setCookie('stepIn', token);
+	setCookie('step-in-access-token', token);
 };
 
 export const deleteToken = () => {
-	removeCookie('stepIn');
+	removeCookie('step-in-access-token');
 };

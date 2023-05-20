@@ -1,12 +1,12 @@
-import { Metadata } from 'next';
+// import { Metadata } from 'next';
 import Navbar from '@components/layout/Navbar';
 import Breadcrumbs from '@components/layout/Breadcrumbs';
 import StepContainer from '@components/layout/StepContainer';
 
-export const metadata: Metadata = {
-	title: 'Main page',
-	description: 'Description of main page',
-};
+// export const metadata: Metadata = {
+// 	title: 'Main page',
+// 	description: 'Description of main page',
+// };
 
 export default function Main() {
 	return (

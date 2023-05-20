@@ -41,7 +41,7 @@ instance.interceptors.response.use(
 	async (error) => {
 		const { config: reqData } = error || {};
 		if (error.response.status === 401) {
-			if (error.response.data.message === 'Invalid credentials') {
+			if (error.response.data.message.includes('Invalid credentials')) {
 				deleteToken();
 				const tokenRes = await refreshToken();
 				if (tokenRes.data) {
@@ -52,7 +52,7 @@ instance.interceptors.response.use(
 					return instance(reqData);
 				}
 			} else if (
-				error.response.data.message === 'Authentication needed'
+				error.response.data.message.includes('Authentication needed')
 			) {
 				deleteToken();
 				//TODO. 전역 관리 중인 유저 정보 비우고 로그인 페이지로 리다이렉트

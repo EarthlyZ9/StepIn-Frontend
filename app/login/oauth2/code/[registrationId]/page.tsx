@@ -1,13 +1,15 @@
 'use client';
 import { useSearchParams, useRouter } from 'next/navigation';
 import authApi from '@apis/auth/authApi';
+import { useDispatch } from 'react-redux';
+import { setToken } from '@utils/token';
 
 export default function OAuth({ params }) {
-	console.log('oauth');
 	const router = useRouter();
 	const searchParams = useSearchParams();
 	const queryState = searchParams.get('state');
 	const code = searchParams.get('code');
+	const dispatch = useDispatch();
 
 	const registrationId = params.registrationId;
 	let state;
@@ -16,7 +18,8 @@ export default function OAuth({ params }) {
 	}
 	if (queryState === state) {
 		authApi.createOAuthUser({ code, registrationId }).then((r) => {
-			console.log(r);
+			setToken(r.accessToken);
+			dispatch({ type: 'patchUser', payload: r });
 			router.push('/main');
 		});
 	}
