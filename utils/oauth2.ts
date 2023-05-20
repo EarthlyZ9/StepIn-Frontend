@@ -10,9 +10,10 @@ export const setOAuth2State = () => {
 };
 
 export const getGoogleAuthUri = (state: string) => {
-	return `${process.env.NEXT_PUBIC_GOOGLE_AUTHORIZATION_BASE_URI}
+	return `${process.env.NEXT_PUBLIC_GOOGLE_AUTHORIZATION_BASE_URI}
 		?client_id=${process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID}
-		&client_secret=${process.env.NEXT_PUBLIC_GOOGLE_CLIENT_SECRET}
+		&access_type=offline
+		&include_granted_scopes=true
 		&response_type=code
 		&scope=${process.env.NEXT_PUBLIC_GOOGLE_SCOPE}
 		&state=${state}
@@ -32,7 +33,7 @@ export const getKakaoAuthUri = (state: string) => {
 };
 
 export const getNaverAuthUri = (state: string) => {
-	return `${process.env.NEXT_PUBIC_NAVER_AUTHORIZATION_BASE_URI}
+	return `${process.env.NEXT_PUBLIC_NAVER_AUTHORIZATION_BASE_URI}
 		?client_id=${process.env.NEXT_PUBLIC_NAVER_CLIENT_ID}
 		&client_secret=${process.env.NEXT_PUBLIC_NAVER_CLIENT_SECRET}
 		&response_type=code
