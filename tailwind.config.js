@@ -86,6 +86,10 @@ module.exports = {
 						3: '#F8F0E4',
 					},
 				},
+				social: {
+					kakao: '#FEE500',
+					naver: '#03C75A',
+				},
 				system: {
 					error: '#EA3E69',
 					info: '#7EB803',
